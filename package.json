@@ -1,0 +1,20 @@
+{
+  "name": "wpi-site-performance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-perf": "lighthouse https://www.wpi.edu --output=html --output-path ./reports/$(date +%Y-%m-%d-%R)-in-depth-performance-report.html --perf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitdev.wpi.edu:bbytyqi/wpi-site-performance.git"
+  },
+  "author": "Isha Srivastava",
+  "license": "ISC",
+  "dependencies": {
+    "convert-csv-to-json": "0.0.13",
+    "csvtojson": "^2.0.0",
+    "lighthouse": "^2.9.4"
+  }
+}

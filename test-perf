@@ -1,0 +1,10 @@
+#!/bin/bash
+DATE=`date +%Y-%m-%d`
+
+# Change this path to reflect where you downloaded the repository
+cd /Users/bbytyqi/Desktop/projects/wpi-site-performance
+node index.js
+npm run test-perf
+git add .
+git commit -m "${DATE} - ran perf check"
+git push origin master
